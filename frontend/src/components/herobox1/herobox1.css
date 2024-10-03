@@ -1,0 +1,190 @@
+.herobox1 {
+  width: 50%;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 4fr;
+  grid-gap: 0px;
+}
+
+.inputWrapper {
+  text-align: left;
+}
+
+.inputLabel {
+  margin: 30px 0px 0px 20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.genderSelect {
+  margin: 10px 20px;
+  height: 3rem;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+}
+
+.radioGroup {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns for radio buttons */
+  gap: 10px; /* Space between radio buttons */
+  align-items: center; /* Center the items vertically */
+
+  text-align: left;
+  outline: 1px solid #999;
+  border-radius: 15px;
+  margin: 10px 20px 0px 20px;
+}
+
+.radioGroup:first-child {
+  margin-top: 8px;
+}
+
+input[type='radio'] {
+  margin: 1rem;
+  accent-color: blue;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  transform: scale(1.5);
+}
+
+input[type='text'] {
+  padding: 17px;
+  margin: 10px 20px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+}
+
+textarea {
+  padding: 40px 20px 20px 20px;
+  margin: 10px 20px 0px 20px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+}
+
+.pilleContainer {
+  /* width: auto; */
+  /* height: 40px; */
+  /* outline: 1px solid #999; */
+  /* border-radius: 15px; */
+  /* padding-top: 10px; */
+  /* padding-bottom: 10px; */
+  /* margin: auto; */
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.pille {
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  gap: 15px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  row-gap: 10px;
+  justify-content: center;
+}
+
+.badgegray {
+  background-color: #e9ecef;
+  color: #0f0f0f;
+  border-radius: 15px;
+  padding: 10px 5px 10px 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.badgeclicked {
+  background-color: #7749f8;
+  color: #0f0f0f;
+  border-radius: 25px;
+  padding: 10px 5px 10px 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+@media (max-width: 64rem) {
+  .herobox1 {
+    order: 2;
+    width: 100%;
+    height: auto;
+  }
+
+  .form {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-gap: 0px;
+  }
+
+  .inputLabel {
+    margin: 10px 0px 0px 1rem;
+    font-size: 0.9rem;
+  }
+
+  .radioGroup {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Four columns for radio buttons */
+    gap: 5px; /* Space between radio buttons */
+    align-items: center; /* Center the items vertically */
+    text-align: left;
+    outline: 1px solid #999;
+    border-radius: 10px;
+    margin: 5px 1rem 0px 1rem;
+  }
+
+  input[type='radio'] {
+    margin: 0.7rem;
+    accent-color: blue;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    transform: scale(1.2);
+  }
+
+  input[type='text'] {
+    padding: 10px 5px 5px 5px;
+    margin: 10px 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+
+  .genderSelect {
+    margin: 10px 1rem;
+    height: 2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+
+  textarea {
+    padding: 10px 5px 5px 5px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+
+  .pille {
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    gap: 10px;
+    padding: 10px 1rem;
+    margin-bottom: 10px;
+    row-gap: 10px;
+    justify-content: center;
+  }
+  .badgegray {
+    background-color: #e9ecef;
+    color: #0f0f0f;
+    border-radius: 10px;
+    padding: 10px 5px 10px 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+
+  .badgeclicked {
+    background-color: #7749f8;
+    color: #0f0f0f;
+    border-radius: 10px;
+    padding: 10px 5px 10px 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+}

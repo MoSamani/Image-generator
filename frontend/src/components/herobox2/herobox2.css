@@ -1,0 +1,220 @@
+.herobox2 {
+  width: 50%;
+  height: 720px;
+  outline: 1px solid #999;
+  border-radius: 15px;
+  margin-top: 60px;
+  margin-right: 20px;
+}
+
+.camerContainer {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  margin-top: 40px;
+  border-radius: 0;
+}
+
+.toggle-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.toggleLabel {
+  margin: 10px 10px 0px 80px;
+  font-size: 16px;
+}
+
+.toggle-btn {
+  background-color: #b7b9ba;
+  border: 1px solid #aaa;
+  border-radius: 99px;
+  width: 100%;
+  min-width: 50px;
+  max-width: 50px;
+  height: 28px;
+  transition: background-color 0.1s ease, border-color 0.2s ease;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.748);
+  position: relative;
+  margin: 20px 10px 10px 10px;
+}
+
+.toggle-btn .thumb {
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  border-radius: 99px;
+  transform: translateX(0);
+  transition: left 0.15s ease;
+  position: absolute;
+  left: 3px;
+  top: 50px;
+  transform: translateY(-47px);
+}
+
+.toggle-btn.toggled {
+  background-color: #5434b0;
+}
+
+.toggle-btn:hover {
+  border-color: #6f6f6f;
+}
+
+.toggle-btn.toggled .thumb {
+  left: calc(50px - 25px);
+}
+
+.refreshButton {
+  outline: 1px solid #4a4949;
+  background-color: #242424;
+  border-radius: 15px;
+  color: #ffffff;
+  padding: 10px 25px 10px 25px;
+  border-radius: 15px;
+  font-size: 1rem;
+  margin: 12px 0px 0px 40px;
+}
+
+.refreshButton:hover {
+  background-color: #5434b0;
+}
+
+.captureButton {
+  outline: 1px solid #4a4949;
+  background-color: #242424;
+  border-radius: 15px;
+  color: #ffffff;
+  padding: 10px 25px 10px 25px;
+  border-radius: 15px;
+  font-size: 1rem;
+  margin: 12px 0px 0px 42px;
+}
+
+.captureButton:hover {
+  background-color: #5434b0;
+}
+
+.uploadButton {
+  display: felx;
+  justify-content: center;
+  position: 'absolute';
+
+  background-color: #242424;
+  margin-top: 230px;
+  padding: 10px 10px 0px 10px;
+  border-radius: 15px;
+  /* border: none; */
+}
+
+.uploadImage {
+  height: 100px;
+  width: 100px;
+}
+
+.uploadFile {
+  width: 100%; /* or any custom size */
+  height: 100%;
+  object-fit: contain;
+}
+
+.uploadImage:hover {
+  background-color: #5434b0;
+}
+.webcam {
+  width: 100%; /* or any custom size */
+  height: 100%;
+  object-fit: contain;
+}
+
+.imgcontainer {
+  height: 550px;
+  justify-items: center;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Mobile-Responsive Anpassungen */
+@media (max-width: 64rem) {
+  .herobox2 {
+    width: calc(100% - 2rem);
+    height: auto;
+    margin: 0;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding: 1rem;
+  }
+
+  .toggle-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;;
+  }
+
+  .toggle-wrapper button {
+    margin: 0.5rem;
+  }
+  .toggle-btn .toggleLabel {
+    margin: 0.5rem;
+  }
+
+  .camerContainer {
+    width: 100%; /* Volle Breite auf mobilen Geräten */
+    height: 300px; /* Dynamische Höhe */
+    margin: 5px 5px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .toggleLabel {
+    margin-left: 10px; /* Abstände verringern für mobile Ansicht */
+    font-size: 14px; /* Kleinere Schriftgröße auf mobilen Geräten */
+  }
+
+  .toggle-btn {
+    width: 40px;
+    height: 24px; /* Kleinere Schaltfläche für mobile Ansicht */
+    width: 100%;
+  }
+
+  .toggle-btn .thumb {
+    height: 18px;
+    width: 18px;
+    transform: translateY(-48px);
+  }
+
+  .refreshButton,
+  .captureButton {
+    margin-left: 10px; /* Weniger Abstand bei mobilen Geräten */
+    font-size: 0.9rem; /* Kleinere Schriftgröße */
+    padding: 8px 20px; /* Angepasste Polsterung */
+    width: 100%;
+  }
+
+  .uploadButton {
+    margin-top: 100px; /* Weniger Abstand nach oben für mobile Ansicht */
+    padding: 8px;
+  }
+
+  .uploadImage {
+    height: 50px;
+    width: 50px; /* Kleinere Bildgröße auf mobilen Geräten */
+  }
+
+  .imgcontainer {
+    height: 290px;
+    width: auto;
+    padding: 1rem;
+    justify-items: center;
+  }
+
+  .img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
